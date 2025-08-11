@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pon tus datos en este Formulario</title>
+</head>
+<body>
+  <form id="contactoForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="El pepe" />
+
+    <label for="correo">Correo electronico:</label>
+    <input type="email" id="correo" name="correo" placeholder="tungsahur@correo.com" />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="tralalero"></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensajeConfirmacion">!Listo se envio¡</div>
+
+  <script>
+    document.getElementById('contactoForm').addEventListener('submit', function(e) {
+      // completa aca tuus datos
+      const nombre = document.getElementById('nombre').value.trim();
+      const correo = document.getElementById('correo').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+
+      // no vacias
+      if (!nombre || !correo || !mensaje) {
+        alert('Por favor, completa todos los campos.');
+        return;
+      }
+
+      // <div id="mensajeConfirmacion">!Listo se envio¡</div>
+      const mensajeDiv = document.getElementById('mensajeConfirmacion');
+      mensajeDiv.style.display = 'block';
+
+      document.getElementById('contactoForm').reset();
+      // por esto no abra nada en los cuadrads
+    });
+  </script>
+</body>
+</html>
