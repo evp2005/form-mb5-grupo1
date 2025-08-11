@@ -7,16 +7,23 @@
 </head>
 <body>
   <form id="contactoForm">
+    
+    <div class="inputNombre">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" placeholder="El pepe" />
+    </div>
 
+    <div class="inputNombre">
     <label for="correo">Correo electronico:</label>
     <input type="email" id="correo" name="correo" placeholder="tungsahur@correo.com" />
+    </div>
 
+    <div class="clasecampo">
     <label for="mensaje">Mensaje:</label>
     <textarea id="mensaje" name="mensaje" rows="4" placeholder="tralalero"></textarea>
-
-    <button type="submit">Enviar</button>
+    </div>
+    
+    <button class="botonbrillante" type="submit">Enviar</button>
   </form>
 
   <div id="mensajeConfirmacion">!Listo se envio¡</div>
