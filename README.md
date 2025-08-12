@@ -18,6 +18,8 @@ Este proyecto es un **formulario web** con validación en el lado del cliente us
 📦 proyecto
 -indice.html # Página principal con el formulario
 
+-estilo.css #  Estilos del formulario
+
 -validacion-formulario.js # Lógica de validación
 
 -api.js # Función para enviar datos al backend
