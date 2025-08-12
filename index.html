@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Contacto</title>
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <form id="contactoForm">
+    <div class="tituloFormulario">
+      <img src="css/logo.png" alt="Logo" class="logoFormulario">
+      Escribenos...
+    </div>
+
+    <div class="inputNombre">
+      <label for="nombre">
+        <i class="fa-solid fa-user"></i> Nombre:
+      </label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="clasecampo">
+      <label for="correo">
+        <i class="fa-solid fa-envelope"></i> Correo:
+      </label>
+      <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+    </div>
+
+    <div class="clasecampo">
+      <label for="mensaje">
+        <i class="fa-solid fa-comment-dots"></i> Mensaje:
+      </label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <button type="submit" class="botonbrillante">Enviar</button>
+  </form>
+
+</body>
+</html>
