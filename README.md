@@ -36,24 +36,4 @@ Este proyecto es un **formulario web** con validación en el lado del cliente us
 
 ---
 
-## 📦 Instalación y uso
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/evp2005/form-mb5-grupo1.git
-   cd form-mb5-grupo1.git
-Instala JSON Server:
 
-
-npm install -g json-server
-Inicia el servidor:
-
-
-json-server --watch db.json --port 3001
-Abre indice.html en tu navegador.
-
-📌 Notas
-El archivo api.js está preparado para enviar los datos usando fetch.
-
-Puedes conectar el formulario con cualquier backend real cambiando la URL en api.js.
-
-Si usas JSON Server, los mensajes enviados se guardarán en db.json.
