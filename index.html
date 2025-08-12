@@ -3,29 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Formulario</title>
+  <title>Formulario de Contacto</title>
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <h1>Contáctanos</h1>
+
   <form id="contactoForm">
-    <div class="inputNombre">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Alehandro G.P." />
+    <div class="tituloFormulario">
+      <img src="css/logo.png" alt="Logo" class="logoFormulario">
+      Escribenos...
     </div>
 
     <div class="inputNombre">
-    <label for="correo">Correo electronico:</label>
-    <input type="email" id="correo" name="correo" placeholder="xxxxxx@xxxx.com" />
+      <label for="nombre">
+        <i class="fa-solid fa-user"></i> Nombre:
+      </label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
     </div>
 
     <div class="clasecampo">
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+      <label for="correo">
+        <i class="fa-solid fa-envelope"></i> Correo:
+      </label>
+      <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
     </div>
-    
-    <button class="botonbrillante" type="submit">Enviar</button>
+
+    <div class="clasecampo">
+      <label for="mensaje">
+        <i class="fa-solid fa-comment-dots"></i> Mensaje:
+      </label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <button type="submit" class="botonbrillante">Enviar</button>
   </form>
 
-  <div id="mensajeConfirmacion">!Listo se envio¡</div>
 </body>
 </html>
+
