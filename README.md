@@ -1,5 +1,5 @@
 
-# 📩 Formulario de Contacto con Validación y JSON Server
+# 📩 Formulario 
 
 Este proyecto es un **formulario web** con validación en el lado del cliente usando **JavaScript** y envío de datos a un **backend simulado** con **JSON Server**.
 
