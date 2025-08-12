@@ -16,10 +16,10 @@ Este proyecto es un **formulario web** con validación en el lado del cliente us
 
 ## 📂 Estructura del proyecto
 📦 proyecto
-├── indice.html # Página principal con el formulario
-├── validacion-formulario.js # Lógica de validación
-├── api.js # Función para enviar datos al backend
-└── db.json # Base de datos simulada para JSON Server
+indice.html # Página principal con el formulario
+validacion-formulario.js # Lógica de validación
+api.js # Función para enviar datos al backend
+db.json # Base de datos simulada para JSON Server
 
 
 
