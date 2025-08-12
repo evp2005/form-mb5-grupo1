@@ -25,14 +25,12 @@ Este proyecto es un **formulario web** con validación en el lado del cliente us
 -🎨 estilo.css # Estilos del formulario
 
 - 📜 validacion-formulario.js # Lógica de validación
-- 
+  
 - 📜 api.js # Función para enviar datos al backend
-- 
+  
 - 🗄 db.json # Base de datos simulada para JSON Server
 
-yaml
-Copiar
-Editar
+
 
 ---
 
