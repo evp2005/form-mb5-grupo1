@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('fondo2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor del formulario */
+#contactoForm {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 400px; /* Ahora es adaptable */
+  width: 90%; /* Se ajusta en móviles */
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  animation: flotar 3s ease-in-out infinite;
+  border: 2px solid #3030AC;
+  box-sizing: border-box; /* Evita que padding afecte el ancho */
+}
+
+/* Animación de flotación */
+@keyframes flotar {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Título del formulario */
+.tituloFormulario {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Ajuste si el título es largo */
+}
+
+.logoFormulario {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+/* Campos del formulario */
+.inputNombre,
+.clasecampo {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Iconos junto a etiquetas */
+label i {
+  color: #3030AC;
+  margin-right: 5px;
+}
+
+/* Inputs y textarea */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: none; /* No modificable */
+}
+
+/* Botón */
+.botonbrillante {
+  background: linear-gradient(45deg, #3030AC, #5a5ae6);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botonbrillante:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #5a5ae6;
+}
+
+/* Mensaje de confirmación */
+#mensajeConfirmacion {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+  text-align: center;
+}
+
+/* --- Ajustes responsivos --- */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  #contactoForm {
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  .tituloFormulario {
+    font-size: 1.2em;
+  }
+
+  .logoFormulario {
+    width: 25px;
+    height: 25px;
+  }
+
+  input, textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .botonbrillante {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Para tablets */
+@media (max-width: 768px) {
+  #contactoForm {
+    margin: 40px auto;
+  }
+
+  .tituloFormulario {
+    font-size: 1.3em;
+  }
+}
