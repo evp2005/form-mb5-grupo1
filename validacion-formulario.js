@@ -1,9 +1,10 @@
 // validacion-formulario.js
-
+import { enviarDatos } from './Script/api.js'; //CAMBIE YO
 // 1. EVENT LISTENER PARA EL FORMULARIO
 // -----------------------------------
 // Captura el evento de envío del formulario y previene el comportamiento por defecto (recargar la página)
-document.getElementById('contactoForm').addEventListener('submit', function(e) {
+document.getElementById('contactoForm').addEventListener('submit', async function(e) {  //CAMBIE YO
+
   e.preventDefault(); // Detiene el envío tradicional del formulario
   
   // 2. LIMPIEZA DE ERRORES ANTERIORES
@@ -54,8 +55,16 @@ document.getElementById('contactoForm').addEventListener('submit', function(e) {
   // 5. RESPUESTA A FORMULARIO VÁLIDO
   // -------------------------------
   if (formularioValido) {
+    const datos = {  //CAMBIE YO
+    nombre: this.nombre.value.trim(),
+    correo: this.correo.value.trim(),
+    mensaje: this.mensaje.value.trim()
+  };
+
+  try {
+    await enviarDatos(datos); // Enviar datos a la API
     // Muestra mensaje de éxito
-    document.getElementById('mensajeConfirmacion').textContent = '¡Formulario válido!';
+    document.getElementById('mensajeConfirmacion').textContent = '¡Formulario enviado!';
     
     // Resetea el formulario
     this.reset();
@@ -63,7 +72,13 @@ document.getElementById('contactoForm').addEventListener('submit', function(e) {
     // PUNTO DE EXTENSIÓN PARA EL BACKEND:
     // Aquí se podría conectar con la API simulada o real
     // Ejemplo: enviarDatos({ nombre, correo, mensaje });
+  } catch (error) {
+    document.getElementById('mensajeConfirmacion').textContent = 'Error al enviar el formulario. Intenta más tarde.';
+    console.error(error);
   }
+}
+
+
 });
 
 // 6. FUNCIÓN AUXILIAR: MOSTRAR ERRORES

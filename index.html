@@ -3,42 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Formulario de Contacto</title>
-  <!-- Font Awesome para iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Pon tus datos en este Formulario</title>
   <link rel="stylesheet" href="css/estilos.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 </head>
 <body>
-
   <form id="contactoForm">
-    <div class="tituloFormulario">
-      <img src="css/logo.png" alt="Logo" class="logoFormulario">
-      Escribenos...
-    </div>
+      <div class="tituloFormulario">
+        <img src="CSS/logo.png" alt="Logo" class="logoFormulario" />
+        Escribenos...
+      </div>
 
-    <div class="inputNombre">
-      <label for="nombre">
-        <i class="fa-solid fa-user"></i> Nombre:
-      </label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-    </div>
+      <div class="inputNombre">
+        <label for="nombre"> <i class="fa-solid fa-user"></i> Nombre: </label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Tu nombre"
+          required
+        />
+      </div>
 
-    <div class="clasecampo">
-      <label for="correo">
-        <i class="fa-solid fa-envelope"></i> Correo:
-      </label>
-      <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
-    </div>
+      <div class="clasecampo">
+        <label for="correo">
+          <i class="fa-solid fa-envelope"></i> Correo:
+        </label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="Tu correo electrónico"
+          required
+        />
+      </div>
 
-    <div class="clasecampo">
-      <label for="mensaje">
-        <i class="fa-solid fa-comment-dots"></i> Mensaje:
-      </label>
-      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-    </div>
+      <div class="clasecampo">
+        <label for="mensaje">
+          <i class="fa-solid fa-comment-dots"></i> Mensaje:
+        </label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          placeholder="Escribe tu mensaje aquí..."
+          required
+        ></textarea>
+      </div>
 
-    <button type="submit" class="botonbrillante">Enviar</button>
-  </form>
+      <button type="submit" class="botonbrillante">Enviar</button>
+    </form>
 
+  <div id="mensajeConfirmacion"></div>
+
+  <!--yo agregue-->
+  <script type="module" src="validacion-formulario.js"></script>
+  
 </body>
 </html>
